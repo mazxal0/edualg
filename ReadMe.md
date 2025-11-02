@@ -1,12 +1,31 @@
-Hello
+# Education Project
 
-<h1>
-    <b>
-        This project is development
-    </b>
-</h1>
+This is my **education project**.  
+Currently, I am developing data structures in Python.
 
-It's my education project </br>
-Now I develop the structures:
-1) LinkedList
-2) DoublyLinkedList
+## Structures
+
+### 1) Linear
+- **LinkedList**
+- **DoublyLinkedList**
+- **Stack**
+- **Queue**
+- **Dequeue**
+
+### 2) Tree
+- **BinarySearchTree**
+
+## Description
+
+This project contains implementations of classic data structures as part of my learning process.  
+Each structure is implemented in a way that allows testing, iteration, and educational experimentation.
+
+## Usage
+
+```python
+from edualg.structures.linear.LinkedList import LinkedList
+
+ll = LinkedList()
+ll.append(1)
+ll.append(2)
+print(list(ll))

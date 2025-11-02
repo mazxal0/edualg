@@ -1,4 +1,4 @@
-from typing import TypeVar, Generic
+from typing import TypeVar, Generic, Iterable
 
 from edualg.structures.linear import DoublyLinkedList
 
@@ -8,8 +8,11 @@ class Empty(Exception):
 
 T = TypeVar('T')
 class Queue(Generic[T]):
-    def __init__(self):
+    def __init__(self, array: Iterable[T] = None):
         self._queue = DoublyLinkedList[T]()
+        if array:
+            for item in array:
+                self._queue.append(item)
 
     def __len__(self):
         return len(self._queue)
