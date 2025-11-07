@@ -18,7 +18,14 @@ class BinarySearchTree(BaseTree[T]):
         return self._root
 
     @property
-    def min(self, node: Optional[Node[T]] = None) -> Optional[T]:
+    def min(self) -> Optional[T]:
+        node = self._root
+
+        while node.left:
+            node = node.left
+        return node.value
+
+    def _get_min(self, node: Optional[Node[T]] = None) -> Optional[T]:
         if node is None:
             node = self._root
 

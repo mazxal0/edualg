@@ -1,6 +1,6 @@
 [project]
 name = "edualg"
-version = "0.0.3"
+version = "0.0.4"
 description = "Educational implementations of data structures and algorithms"
 authors = [
   { name="Maxim Bobkow" }
